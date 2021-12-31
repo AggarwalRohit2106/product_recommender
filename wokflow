@@ -1,0 +1,8 @@
+1)  import resnet50 model
+
+2) use whole model as it is just instead of their last layer we are adding our last layer
+
+3) we are giving 44k imgaes on resnet and it return 2048 feature for each image (feature extraciton )
+
+4) now we have a matrix of (44k,2048) i.e each image is now a vector in 2048 dimension space , give new input image to model, return 2048 feature for that input image
+   compare it with feature list or matrix. pick close 5 images
